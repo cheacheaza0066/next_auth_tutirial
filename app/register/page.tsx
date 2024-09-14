@@ -48,9 +48,13 @@ function RegisterPage({}: Props) {
       }
       const form = e.target as HTMLFormElement;
       form.reset();
-      // const data: { message: string } = await res.json();
-      // console.log("Registration successful:", data);
 
+      Swal.fire({
+        title: "Success!",
+        text: "User registered successfully.",
+        icon: "success",
+        confirmButtonText: "Cool",
+      });
 
 
     } catch (error) {
